@@ -1,0 +1,241 @@
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.logo {
+  color: $accent-color;
+  display: inline-block;
+
+  font-family: $logo-font;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 26px;
+  }
+}
+.logo span {
+  color: $logo-text-color-black;
+}
+@media screen and(min-width:768px) {
+  .main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and(max-width:480px) {
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 14px;
+  }
+}
+
+.main-nav__button {
+  display: inline-flex;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  padding: 0;
+
+  &:hover {
+    fill: $accent-color;
+  }
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    text-align: center;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    background-color: $white-color;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+    padding-top: 60px;
+    padding-left: 140;
+    padding-right: 140;
+    padding-bottom: 60px;
+    &.is-open {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+  }
+}
+@media screen and(min-width:1200px) {
+  .menu-container {
+    align-items: center;
+  }
+}
+.site-nav {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    font-size: 14px;
+    margin-left: 90px;
+  }
+}
+li .link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .site-nav .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.site-nav .link-current {
+  position: relative;
+  padding-bottom: 8px;
+  color: $accent-color;
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
+  @media screen and(min-width:768px) {
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+
+.site-nav .link {
+  color: $title-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .contacts-list .item + .item {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-list {
+    margin-top: 60px;
+    padding-left: 0;
+    margin-bottom: 0;
+    &.item {
+      align-items: center;
+    }
+  }
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $paragraph-text-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.contacts-icon {
+  fill: currentColor;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+  @media (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+  @media (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.smartphone-icon {
+  width: 10px;
+  height: 15px;
+  @media (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+  @media (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+header {
+  position: relative;
+  border: 1px solid #ececec;
+}
