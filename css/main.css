@@ -1,8 +1,8 @@
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 ul {
@@ -67,24 +67,24 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    min-height: 80px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .mobile-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+@media screen and (max-width: 767px) {
+  .main-navigation {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    min-height: 60px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -132,10 +132,9 @@ img {
     background-color: #ffffff;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    padding-top: 60px;
     padding-left: 140;
     padding-right: 140;
-    padding-bottom: 60px;
+    padding: 60px;
   }
   .menu-container.is-open {
     display: block;
@@ -174,7 +173,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     font-size: 14px;
-    margin-left: 90px;
+    margin-left: 88px;
   }
 }
 
@@ -188,7 +187,7 @@ li .link:hover, li .link:focus {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav .item:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -252,23 +251,33 @@ li .link:hover, li .link:focus {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .contacts-list {
     margin-top: 60px;
     padding-left: 0;
-    margin-bottom: 0;
   }
   .contacts-list.item {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0;
+  }
+  .contacts-list .item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .contacts-list {
+    padding-left: 0;
+    margin-left: 84px;
   }
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -292,10 +301,22 @@ li .link:hover, li .link:focus {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    font-size: 12px;
+  }
+}
+
 .contacts-icon {
   fill: currentColor;
   vertical-align: middle;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-icon {
+    margin-right: 8px;
+  }
 }
 
 .envelope-icon {
@@ -339,5 +360,35 @@ li .link:hover, li .link:focus {
 header {
   position: relative;
   border: 1px solid #ececec;
+}
+
+.decision {
+  background-color: #2f303a;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-background-image.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-background-image.jpg");
+  background-position: center;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.decision-header {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .decision-header {
+    font-size: 44px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
