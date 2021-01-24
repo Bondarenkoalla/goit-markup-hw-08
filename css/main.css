@@ -917,10 +917,11 @@ li .link:hover, li .link:focus {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  display: block;
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 93px 15px;
+  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -929,18 +930,44 @@ li .link:hover, li .link:focus {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  border-radius: 4px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
   background-color: #ffffff;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 580px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .button-close {
@@ -995,6 +1022,13 @@ li .link:hover, li .link:focus {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-application {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
 .modal h2 {
   font-weight: 700;
   font-size: 20px;
@@ -1006,27 +1040,33 @@ li .link:hover, li .link:focus {
 }
 
 .form-label {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 10px;
+  position: relative;
 }
 
 .input-and-svg {
-  position: relative;
   display: block;
 }
 
 .form-input {
   position: relative;
-  display: block;
   margin-top: 4px;
-  width: 448px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-right: 0;
   -webkit-transition-property: border;
   transition-property: border;
   -webkit-transition-duration: 250ms;
@@ -1044,13 +1084,18 @@ li .link:hover, li .link:focus {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-input {
+    min-width: 448px;
+  }
+}
+
 .form-input-comment {
-  position: relative;
   display: block;
   margin-top: 4px;
   resize: none;
   height: 120px;
-  width: 448px;
+  min-width: 370px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 16px;
@@ -1071,10 +1116,12 @@ li .link:hover, li .link:focus {
 
 .form-icon {
   position: absolute;
+  top: 69%;
+  left: 12px;
+  -webkit-transform: translateY(-69%);
+          transform: translateY(-69%);
   width: 18px;
   height: 18px;
-  left: 11px;
-  top: 12px;
   fill: #212121;
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -1085,6 +1132,9 @@ li .link:hover, li .link:focus {
 }
 
 .button-send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1096,21 +1146,9 @@ li .link:hover, li .link:focus {
   letter-spacing: 0.06em;
   border: none;
   margin-top: 30px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin-right: auto;
+  margin-left: auto;
   cursor: pointer;
-}
-
-.form-application {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 41px;
 }
 
 .label-name {
@@ -1143,8 +1181,6 @@ form b {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 359px;
-  height: 50px;
   background-color: #2f303a;
   padding-left: 16px;
   padding-top: 15px;
