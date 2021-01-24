@@ -910,6 +910,271 @@ li .link:hover, li .link:focus {
   fill: currentColor;
 }
 
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .join {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-right: 93px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .join .icon-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.join b {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.icon-list .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.icon-list a {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-list a:hover {
+  background-color: #2196f3;
+}
+
+.icon-list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+footer .studio {
+  color: #ffffff;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address .item {
+  font-style: normal;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.address .item:nth-child(n + 2) {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin-top: 9px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.email-addres {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  background-color: #2f303a;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: rgba(255, 255, 255, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .email-addres {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .email-addres {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email-addres {
+    min-width: 358px;
+  }
+}
+
+.button-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 12px;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 29px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .button-subscribe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.button-subscribe span {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.subscribe div {
+  position: relative;
+}
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -930,7 +1195,7 @@ li .link:hover, li .link:focus {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -944,6 +1209,7 @@ li .link:hover, li .link:focus {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 450px;
 }
 
 @media screen and (min-width: 580px) {
@@ -953,8 +1219,6 @@ li .link:hover, li .link:focus {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
-    max-width: 450px;
-    width: 100%;
   }
 }
 
@@ -965,7 +1229,7 @@ li .link:hover, li .link:focus {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
-    min-width: 528px;
+    width: 528px;
     min-height: 581px;
   }
 }
@@ -1176,59 +1440,6 @@ form b {
           justify-content: center;
 }
 
-.email-addres {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: #2f303a;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: rgba(255, 255, 255, 0);
-}
-
-.subscribe {
-  margin-left: 93px;
-}
-
-.button-subscribe {
-  margin-left: 12px;
-  background: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding-left: 29px;
-  padding-right: 62px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  cursor: pointer;
-}
-
-.button-subscribe span {
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.9;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-}
-
-.icon-send {
-  position: absolute;
-  top: 13px;
-  right: 28px;
-  width: 24px;
-  height: 24px;
-}
-
-.subscribe div {
-  position: relative;
-}
-
 .input-checkbox {
   position: absolute;
   width: 1px;
@@ -1251,7 +1462,10 @@ form b {
 }
 
 .accept-text {
-  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1283,15 +1497,27 @@ form b {
   background-origin: border-box;
 }
 
+@media screen and (min-width: 1200px) {
+  .accept-text {
+    font-size: 14px;
+  }
+}
+
 .conditions {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196f3;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-weight: 400;
   margin-left: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .conditions {
+    font-size: 14px;
+  }
 }
 
 .label-checkbox {
