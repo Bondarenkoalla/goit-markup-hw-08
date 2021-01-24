@@ -19,7 +19,7 @@
   <body>
     <header>
       <div class="container main-navigation">
-               <!-- <div class="mobile-header"> -->
+              
           <a href="" class="logo">Web<span>Studio</span></a>
           <button type="button" class="main-nav__button" 
             aria-expanded="false" 
@@ -31,7 +31,7 @@
               </use>
             </svg> 
           </button>
-          <!-- </div> -->
+         
          <div class="menu-container" id="menu-container" data-menu>
           <nav class="main-nav">
           <ul class="site-nav" >
@@ -62,9 +62,9 @@
     </div>
     </header>
     <main>
-      <section class="decision">
+      <section class="hero">
         <div class="container">
-          <h1 class="decision-header">
+          <h1 class="hero-header">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
@@ -77,7 +77,7 @@
           <ul class="qualities-list">
             <li class="item">
               <div class="icon-section">
-              <svg class="qualities-icon"><use  href="./images/sprite.svg#icon-antenna"></use></svg></div>
+              <svg class="qualities-icon "><use  href="./images/sprite.svg#icon-antenna"></use></svg></div>
               <h3 class="quality">Внимание к деталям</h3>
               <p class="quality-description">
                 Идейные соображения, а также начало повседневной работы по
@@ -86,7 +86,7 @@
             </li>
             <li class="item">
               <div class="icon-section">
-              <svg class="qualities-icon">
+              <svg class="qualities-icon ">
                 <use href="./images/sprite.svg#icon-clock"></use>
               </svg> </div>
               <h3 class="quality">Пунктуальность</h3>
@@ -98,7 +98,7 @@
             
             <li class="item">
               <div class="icon-section">
-              <svg class="qualities-icon">
+              <svg class="qualities-icon ">
                 <use href="./images/sprite.svg#icon-diagram"></use>
               </svg> </div>
               <h3 class="quality">Планирование</h3>
@@ -109,7 +109,7 @@
             </li>
             <li class="item">
               <div class="icon-section">
-              <svg class="qualities-icon">
+              <svg class="qualities-icon ">
                 <use href="./images/sprite.svg#icon-astronaut"></use>
               </svg></div>
               <h3 class="quality">Современные технологии</h3>
@@ -126,15 +126,15 @@
           <h2 class="what-we-do-header">Чем мы занимаемся</h2>
           <ul class="what-we-do-list">
             <li class="item">
-              <img src="./images/img1.jpg" alt="" width="370" height="294" />
+              <img srcset="./images/desctop/whatwedo_1.jpg 1x, ./images/desctop/whatwedo_1@2x.jpg 2x" src="./images/desctop/whatwedo_1.jpg" alt="" width="370" height="294" />
               <p class="description">Десктопные приложения</p>
             </li>
             <li class="item">
-              <img src="./images/box2.jpg" alt="" width="370" height="294" />
+              <img srcset="./images/desctop/whatwedo_2.jpg 1x, ./images/desctop/whatwedo_2@2x.jpg 2x" src="./images/desctop/whatwedo_2.jpg" alt="" width="370" height="294" />
               <p class="description">Мобильные приложения</p>
             </li>
             <li class="item">
-              <img src="./images/box3.jpg" alt="" width="370" height="294" />
+              <img srcset="./images/desctop/whatwedo_3.jpg 1x, ./images/desctop/whatwedo_3@2x.jpg 2x" src="./images/desctop/whatwedo_3.jpg" alt="" width="370" height="294" />
               <p class="description">Дизайнерские решения</p>
             </li>
           </ul>
@@ -143,15 +143,17 @@
 
       <section class="our-team">
         <div class="container">
-          <h2 class="what-we-do-header">Наша команда</h2>
+          <h2 class="our-team-header">Наша команда</h2>
           <ul class="member-list">
             <li class="item">
-              <img
-                src="./images/img(1)1.jpg"
-                alt="Игорь Демьяненко Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture class="member-photo">
+                <source srcset="./images/mobile/member1.jpg 1x, ./images/mobile/member1@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./images/tablet/member1.jpg 1x, ./images/tablet/member1@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/desctop/member1.jpg 1x, ./images/desctop/member1@2x.jpg 2x" media="(min-width: 1200px)">
+              
+                <img src="./images/mobile/member1.jpg" alt="Игорь Демьяненко Product Designer" />
+              </picture>
+              
               <div class="description">
               <h3 class="team-member">Игорь Демьяненко</h3>
               <p class="post">Product Designer</p>              
@@ -171,12 +173,14 @@
             </li>
 
             <li class="item">
-              <img
-                src="./images/img(1)2.jpg"
-                alt="Ольга Репина Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture class="member-photo">
+                <source srcset="./images/mobile/member2.jpg 1x, ./images/mobile/member2@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./images/tablet/member2.jpg 1x, ./images/tablet/member2@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/desctop/member2.jpg 1x, ./images/desctop/member2@2x.jpg 2x" media="(min-width: 1200px)">
+              
+              <img src="./images/mobile/member2.jpg" alt="Ольга Репина Frontend Developer"  />
+              </picture>
+              
               <div class="description">
               <h3 class="team-member">Ольга Репина</h3>
               <p class="post">Frontend Developer</p>
@@ -198,12 +202,14 @@
             </li>
 
             <li class="item">
-              <img
-                src="./images/img(1)3.jpg"
-                alt="Николай Тарасов Marketing"
-                width="270"
-                height="260"
-              />
+              <picture class="member-photo">
+                <source srcset="./images/mobile/member3.jpg 1x, ./images/mobile/member3@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./images/tablet/member3.jpg 1x, ./images/tablet/member3@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/desctop/member3.jpg 1x, ./images/desctop/member3@2x.jpg 2x" media="(min-width: 1200px)">
+              
+                <img src="./images/mobile/member3.jpg" alt="Николай Тарасов Marketing"  />
+              </picture>
+              
               <div class="description">
               <h3 class="team-member">Николай Тарасов</h3>
               <p class="post">Marketing</p>
@@ -225,12 +231,14 @@
             </li>
 
             <li class="item">
-              <img
-                src="./images/img(1)4.jpg"
-                alt="Михаил Ермаков UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture class="member-photo">
+                <source srcset="./images/mobile/member4.jpg 1x, ./images/mobile/member4@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./images/tablet/member4.jpg 1x, ./images/tablet/member4@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/desctop/member4.jpg 1x, ./images/desctop/member4@2x.jpg 2x" media="(min-width: 1200px)">
+              
+                <img src="./images/mobile/member4.jpg" alt="Михаил Ермаков UI Designer"  />
+              </picture>
+              
               <div class="description">
               <h3 class="team-member">Михаил Ермаков</h3>
               <p class="post">UI Designer</p>
@@ -253,7 +261,8 @@
           </ul>
         </div>
       </section>
-      <section class="our-clients container">
+      <section class="our-clients ">
+        <div class="container">
         <h2 class="what-we-do-header">Постоянные клиенты</h2>
         <ul class="our-clients-icons">
         <li> <a href=""> <svg class="client-icon" width="44.27" height="49.23"><use href="./images/sprite.svg#icon-logo-1" ></use></svg> </a></li> 
@@ -273,6 +282,7 @@
           <use href="./images/sprite.svg#icon-logo-6" ></use>
         </svg> </a></li>
       </ul>
+      </div>
       </section>
       
     </main>

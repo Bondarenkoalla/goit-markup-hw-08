@@ -1,0 +1,112 @@
+.hero {
+  background-color: $background-color;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  height: 400px;
+  max-width: 1600px;
+  background-position: center;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/mobile/header.jpg');
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and(min-resolution: 2dppx),
+  screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/mobile/header@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/tablet/header.jpg');
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and(min-resolution: 2dppx),
+    screen and (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/tablet/header@2x.jpg');
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/desctop/header.jpg');
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and(min-resolution: 2dppx),
+    screen and (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/desctop/header@2x.jpg');
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 210px;
+    height: 600px;
+  }
+}
+
+.hero-header {
+  color: $white-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
+}
+.order-link {
+  display: inline-block;
+  color: $white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  padding: 10px 32px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+}
