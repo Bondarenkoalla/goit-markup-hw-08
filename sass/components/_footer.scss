@@ -107,10 +107,7 @@ footer .studio {
   display: block;
   margin-top: 9px;
 }
-// .footer-section {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-// }
+
 @media screen and (min-width: 1200px) {
   .footer {
     display: flex;
@@ -143,7 +140,7 @@ footer .studio {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: rgba(255, 255, 255, 0);
+  color: white;
   @media screen and (min-width: 768px) {
     max-width: 450px;
   }
@@ -156,6 +153,13 @@ footer .studio {
   @media screen and (min-width: 1200px) {
     min-width: 358px;
   }
+}
+.email-addres::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.43;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
 }
 .button-subscribe {
   display: flex;
