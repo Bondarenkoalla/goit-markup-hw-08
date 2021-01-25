@@ -1783,6 +1783,9 @@ form b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1815,6 +1818,12 @@ form b {
   background-origin: border-box;
 }
 
+@media screen and (max-width: 767px) {
+  .accept-text {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .accept-text {
     font-size: 14px;
@@ -1829,7 +1838,6 @@ form b {
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-weight: 400;
-  margin-left: 4px;
 }
 
 @media screen and (min-width: 1200px) {
