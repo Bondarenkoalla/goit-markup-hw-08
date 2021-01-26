@@ -134,6 +134,11 @@
 .portfolio-list .description {
   padding: 20px 25px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list .item:first-child .description {
+    padding-bottom: 54px;
+  }
+}
 .portfolio-list a {
   position: relative;
   display: block;
